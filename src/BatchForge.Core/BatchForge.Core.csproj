@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>BatchForge.Core</RootNamespace>
+    <AssemblyName>BatchForge.Core</AssemblyName>
+    <Version>1.0.0</Version>
+    <Authors>MCMLV1, LLC</Authors>
+    <Company>MCMLV1, LLC</Company>
+    <Product>BatchForge</Product>
+    <Description>High-performance batch file processing pipeline engine</Description>
+    <Copyright>Copyright © 2026 MCMLV1, LLC</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PdfSharpCore" Version="1.3.65" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
