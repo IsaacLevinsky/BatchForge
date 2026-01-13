@@ -83,7 +83,7 @@ Download the latest release for your platform:
 
 **Linux (x64)**
 ```bash
-curl -L https://github.com/YOUR_USERNAME/BatchForge/releases/latest/download/batchforge-linux-x64.tar.gz -o batchforge.tar.gz
+curl -L https://github.com/IsaacLevinsky/BatchForge/releases/latest/download/batchforge-linux-x64.tar.gz -o batchforge.tar.gz
 tar -xzf batchforge.tar.gz
 chmod +x batchforge
 sudo mv batchforge /usr/local/bin/
@@ -95,7 +95,7 @@ batchforge --version
 **Windows (x64)**
 ```powershell
 # Download from GitHub Releases
-Invoke-WebRequest -Uri "https://github.com/YOUR_USERNAME/BatchForge/releases/latest/download/batchforge-win-x64.zip" -OutFile batchforge.zip
+Invoke-WebRequest -Uri "https://github.com/IsaacLevinsky/BatchForge/releases/latest/download/batchforge-win-x64.zip" -OutFile batchforge.zip
 Expand-Archive batchforge.zip -DestinationPath .
 Move-Item batchforge.exe C:\Tools\  # Or add to PATH
 
@@ -105,7 +105,7 @@ batchforge --version
 
 **macOS (Apple Silicon)**
 ```bash
-curl -L https://github.com/YOUR_USERNAME/BatchForge/releases/latest/download/batchforge-osx-arm64.tar.gz -o batchforge.tar.gz
+curl -L https://github.com/IsaacLevinsky/BatchForge/releases/latest/download/batchforge-osx-arm64.tar.gz -o batchforge.tar.gz
 tar -xzf batchforge.tar.gz
 chmod +x batchforge
 sudo mv batchforge /usr/local/bin/
@@ -116,7 +116,7 @@ batchforge --version
 
 **macOS (Intel)**
 ```bash
-curl -L https://github.com/YOUR_USERNAME/BatchForge/releases/latest/download/batchforge-osx-x64.tar.gz -o batchforge.tar.gz
+curl -L https://github.com/IsaacLevinsky/BatchForge/releases/latest/download/batchforge-osx-x64.tar.gz -o batchforge.tar.gz
 tar -xzf batchforge.tar.gz
 chmod +x batchforge
 sudo mv batchforge /usr/local/bin/
@@ -126,7 +126,7 @@ sudo mv batchforge /usr/local/bin/
 
 ```bash
 # Download checksums
-curl -L https://github.com/YOUR_USERNAME/BatchForge/releases/latest/download/SHA256SUMS.txt -o SHA256SUMS.txt
+curl -L https://github.com/IsaacLevinsky/BatchForge/releases/latest/download/SHA256SUMS.txt -o SHA256SUMS.txt
 
 # Verify (Linux/macOS)
 sha256sum -c SHA256SUMS.txt
@@ -138,7 +138,7 @@ Get-FileHash batchforge-win-x64.zip -Algorithm SHA256
 ### Build from Source
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/BatchForge.git
+git clone https://github.com/IsaacLevinsky/BatchForge.git
 cd BatchForge
 dotnet build -c Release
 dotnet run --project src/BatchForge.Cli -- --help
